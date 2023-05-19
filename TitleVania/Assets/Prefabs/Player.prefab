@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1598670266494394872}
   - component: {fileID: 7251584330116679356}
   - component: {fileID: 3083792155500244882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1249395303
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1335804701, guid: c2a1ebaee42e7434d8343cd73475a381, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -119,7 +119,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1209589665598111769}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9fd0d08acc331fd45b3a186da3ca221c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -141,11 +141,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &7251584330116679356
 MonoBehaviour:
@@ -189,3 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebd9a9873cdc9d4fa4eeba839be60b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSpeed: 7
+  jumpSpeed: 20
+  ClimbSpeed: 5
